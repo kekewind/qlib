@@ -30,10 +30,10 @@ jobs:
         $CONDA/bin/python -m black qlib -l 120 --check --diff
 
     # Test Qlib installed with pip
-    - name: Install Qlib with pip
-      run: |
-          sudo $CONDA/bin/python -m pip install numpy==1.19.5
-          sudo $CONDA/bin/python -m pip install pyqlib --ignore-installed ruamel.yaml numpy
+    # - name: Install Qlib with pip
+      # run: |
+          # sudo $CONDA/bin/python -m pip install numpy==1.19.5
+          # sudo $CONDA/bin/python -m pip install pyqlib --ignore-installed ruamel.yaml numpy
 
     - name: Install Lightgbm for MacOS
       run: |
